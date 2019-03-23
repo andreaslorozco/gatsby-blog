@@ -1,0 +1,18 @@
+header {
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 10px;
+    grid-column: 4 / 13;
+    grid-row: 1 / 2;
+}
+
+.header-link{
+    text-decoration: none;
+    color: #564E58;
+    text-transform: uppercase;
+
+}
+
+.header-link.active {
+    font-weight: 800;
+}

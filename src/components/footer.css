@@ -1,0 +1,6 @@
+footer {
+    text-align: center;
+    padding: 30px;
+    grid-column: 1 / 13;
+    grid-row: 6 / 7;
+}

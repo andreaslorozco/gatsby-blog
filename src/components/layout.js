@@ -7,10 +7,17 @@
 
 import React from "react"
 import PropTypes from "prop-types"
+// eslint-disable-next-line
+import Helmet from "react-helmet"
 import { StaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
+import Sidebar from "./sidebar"
+import Footer from "./footer"
+
 import "./layout.css"
+import "prismjs/themes/prism-twilight.css"
+import "prismjs/plugins/line-numbers/prism-line-numbers.css"
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -24,24 +31,24 @@ const Layout = ({ children }) => (
       }
     `}
     render={data => (
-      <>
+      <div id="content">
+      {/* <Helmet>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+      </Helmet> */}
         <Header siteTitle={data.site.siteMetadata.title} />
-        <div
+        {/* <div
           style={{
             margin: `0 auto`,
             maxWidth: 960,
             padding: `0px 1.0875rem 1.45rem`,
             paddingTop: 0,
           }}
-        >
+        > */}
           <main>{children}</main>
-          <footer>
-            © {new Date().getFullYear()}, Built with
-            {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
-          </footer>
-        </div>
-      </>
+        {/* </div> */}
+        <Sidebar/>
+        <Footer/>
+      </div>
     )}
   />
 )

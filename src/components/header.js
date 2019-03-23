@@ -2,14 +2,31 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
+import './header.css';
+
+const partiallyActive = className => ({ isPartiallyCurrent }) => ({
+  className: className + (isPartiallyCurrent ? ` active` : ``),
+})
+
+const PartiallyActiveLink = ({ className, ...rest }) => (
+  <Link getProps={partiallyActive(className)} {...rest} />
+)
+
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
+  <header>
+    <Link activeClassName="active" className="header-link" to="/">
+      Home
+    </Link>
+    <PartiallyActiveLink activeClassName="active" className="header-link" to="/blog">
+      Blog
+    </PartiallyActiveLink>
+    <Link activeClassName="active" className="header-link" to="/contact">
+      Contact
+    </Link>
+    <Link activeClassName="active" className="header-link" to="/portfolio">
+      Portfolio
+    </Link>
+    {/* <div
       style={{
         margin: `0 auto`,
         maxWidth: 960,
@@ -27,7 +44,7 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h1>
-    </div>
+    </div> */}
   </header>
 )
 

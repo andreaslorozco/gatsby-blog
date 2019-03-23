@@ -1,0 +1,38 @@
+aside {
+    padding: 10px 30px 30px 30px;
+    grid-column: 1 / 4;
+    grid-row: 1 / 6;
+}
+
+#my-name {
+    margin-top: 1px;
+    text-transform: uppercase;
+    color: #564E58;
+    text-align: center;
+}
+
+#my-picture {
+    border-radius: 50%;
+    width: 100%;
+    min-width: 100px;
+}
+  
+#my-description {
+    text-align: justify;
+}
+
+#aside-links {
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);  
+}
+  
+.aside-link {
+    text-decoration: none;
+    color: #564E58;
+    text-align: left;
+}
+  
+.aside-link:hover {
+    /*text-decoration: underline;*/
+    color: #2E294E;
+}
