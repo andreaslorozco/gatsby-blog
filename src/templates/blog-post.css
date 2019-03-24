@@ -1,0 +1,55 @@
+.post-content {
+  padding: 30px;
+  grid-column: 1 / 13;
+  grid-row: 3 / 5;
+  text-align: justify;
+  max-width: 100%;
+}
+
+.post-content p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.post-content h1 {
+  text-align: justify;
+  font-size: 32px;
+}
+
+.post-content h2 {
+  font-family: 'Montserrat', sans-serif;
+  text-align: justify;
+  font-size: 24px;
+}
+
+.post-content h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.post-content img {
+  max-width: 100%;
+  height: auto;
+}
+
+.gatsby-highlight {
+  margin-bottom: 30px;
+}
+
+/* desktop grid */
+@media screen and (min-width: 760px) {
+  .post-content {
+    padding: 30px;
+    grid-column: 4 / 13;
+    grid-row: 2 / 6;
+    text-align: justify;
+  }
+
+  .post-content img {
+    max-width: 100%;
+    height: auto;
+  }
+}

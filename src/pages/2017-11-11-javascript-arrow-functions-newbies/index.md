@@ -16,47 +16,27 @@ Javascript arrow functions are now expressions part of ES6. While there are diff
 
 If you have already used Javascript in the past, you might be used to write your functions like this code below. I was even writing my functions like this just like two months ago!
 
-{% highlight javascript %}
-
+```javascript{numberLines: true}
 let sum = function(a, b) {
   return a+b;
-}
+};
 
 console.log(sum(1, 2));
-
-## 3
-
-{% endhighlight %}
-
-```javascript{numberLines: true}
-// In your gatsby-config.js
-plugins: [
-  {
-    resolve: `gatsby-transformer-remark`,
-    options: {
-      plugins: [
-        `gatsby-remark-prismjs`,
-      ]
-    }
-  }
-]
+// 3
 ```
 
 ## So, how do you right arrow functions now?
 
 It's pretty fucking easy... First, let's get rid of the *function* keyword. Then, let's add a *fat arrow* (=>) after the function's arguments:
 
-{% highlight javascript %}
 
+```javascript{numberLines: true}
 let sum = (a, b) => {
   return a+b;
 }
-
 console.log(sum(1, 2));
-
-## 3
-
-{% endhighlight %}
+// 3
+```
 
 ## What's different?
 
@@ -66,7 +46,7 @@ Based only on the code we see above, it seems unnecessary to create a new syntax
 
 Instead of explicitly writing the return statement on the sum function above, we can remove the curly brackets and the *return* keyword. Javascript will understand that we're implicitly asking to return the `a + b` operation. As you can see, our function still works as before:
 
-{% highlight javascript %}
+```javascript{numberLines: true}
 
 let sum = (a, b) => a + b;
 
@@ -74,7 +54,7 @@ console.log(sum(1, 2));
 
 ## 3
 
-{% endhighlight %}
+```
 
 I know our code has only been reduced by one line, but we can agree that this as basic as they come. Think about the amount of lines we can reduce from our code if it's hundreds or thousands lines long!
 
@@ -82,7 +62,7 @@ I know our code has only been reduced by one line, but we can agree that this as
 
 As I said before, we can simplify the expression of our functions under certain conditions. In order to remove the parenthesis from our arguments, one condition must be met: Our function can only receive one argument. In the example below, we'll remove the parenthesis from our arguments, and keep our return keyword removed. This is called *implicit returns*.
 
-{% highlight javascript %}
+```javascript{numberLines: true}
 
 let double = number => number * 2;
 
@@ -94,7 +74,7 @@ console.log(double(8));
 
 ## 16
 
-{% endhighlight %}
+```
 
 ## The 'this' keyword.
 
