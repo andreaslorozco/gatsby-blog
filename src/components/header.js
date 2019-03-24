@@ -15,16 +15,16 @@ const PartiallyActiveLink = ({ className, ...rest }) => (
 const Header = ({ siteTitle }) => (
   <header>
     <Link activeClassName="active" className="header-link" to="/">
-      Home
+      Principal
     </Link>
     <PartiallyActiveLink activeClassName="active" className="header-link" to="/blog">
       Blog
     </PartiallyActiveLink>
     <Link activeClassName="active" className="header-link" to="/contact">
-      Contact
+      Contacto
     </Link>
     <Link activeClassName="active" className="header-link" to="/portfolio">
-      Portfolio
+      Portafolio
     </Link>
     {/* <div
       style={{
