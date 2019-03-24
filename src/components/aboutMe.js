@@ -2,15 +2,15 @@ import React from 'react';
 
 const AboutMe = () => (
     <main id="about-me-page">
-        <h1>Hi!</h1>
+        <h1>¡Hola!</h1>
 
-        <p>My name is Andreas. I'm an aspiring Web Developer from Costa Rica, and speak both English and Spanish. Even though I have a bachelor's degree in Systems Engineering, my current job is not development related. In late 2016, I decided to change that and embarked into a journey of self-taught web development, and I've been coding in Javascript ever since.</p>
+        <p>Mi nombres es Andreas. Soy un desarrollador Web de Costa Rica y hablo tanto inglés como español. Actualmente me desempeño como desarrollador web Front End, utilizando principalmente ReactJS.</p>
 
-        <p>My hobbies include playing videogames (I've been hooked to 'Darkest Dungeon' lately), watching movies and TV with my fiancee (MCU ftw!), and food! And because I <em>really really</em> like food, I also run. I've ran 5 half marathons so far... we'll see if I can run a full marathon one day.</p>
+        <p>En mi tiempo libre disfruto jugar videojuegos, pasar tiempo con mi esposa y cachorra, y ¡comer! Y porque <em> de verdad verdad</em> me gusta la comida, me gusta correr como ejercicio. He corrido 5 media maratones al día de hoy.</p>
 
-        <p>I created this portfolio site trying to get some online presence. I sometimes write <a href="http://www.andreaslorozco.com/blog">quick tutorials</a>, and I'm also keeping track of my <em>"best"</em> <a href="http://www.andreaslorozco.com/portfolio">personal projects</a>. I have also <a href="https://www.youtube.com/channel/UCBAfloLGPcPvC-tSoH46yRA">uploaded some tutorials to YouTube</a> (in Spanish). With a full time job, it's quite hard to find time to blog, create videos, work on personal projects and have a social life but I'm trying my best to juggle everything around.</p>
+        <p> He creado este sitio para establecer mi presencia en linea. De vez en cuando escribo <a href="http://www.andreaslorozco.com/blog">blog posts relacionados con programación </a>, y mantengo registro de mis <em>"mejores"</em> <a href="http://www.andreaslorozco.com/portfolio">proyectos personales</a>. Últimamente también <a href="https://www.youtube.com/channel/UCBAfloLGPcPvC-tSoH46yRA">he creado algunos tutoriales en YouTube</a>.</p>
 
-        <p>If you would like to get in touch with me, you can find all my info on the '<a href="http://www.andreaslorozco.com/contact">CONTACT</a>' page (link at the top). If you're on desktop, I also have social media links on the sidebar.</p>
+        <p>Si te gustaría contactarme, mi información se encuentra en mi <a href="http://www.andreaslorozco.com/contact">página de 'CONTACTO</a>'. También tengo enlaces a mis redes sociales en la barra lateral.</p>
     </main>
 );
 
