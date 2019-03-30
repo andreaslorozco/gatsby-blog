@@ -5,7 +5,7 @@ title:  "¡Funciones flecha para novatos!"
 date:   2017-11-11T19:08:29.962Z
 author: Andreas
 categories: javascript
-excerpt: "Las funciones flecha de Javascript son expresiones que ahora fomran parte de ES6. Mientras que existen diferencias en apariencia intimidantes entre una expresión de función *normal* y una expresión de función flecha, estas diferencias son fáciles de superar."
+excerpt: "Las funciones flecha de Javascript son expresiones que ahora forman parte de ES6. Mientras que existen diferencias en apariencia intimidantes entre una expresión de función *normal* y una expresión de función flecha, estas diferencias son fáciles de superar."
 ---
 
 # ¿Qué son las funciones flecha en Javascript?
