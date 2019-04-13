@@ -1,0 +1,36 @@
+.post {
+  font-family: 'Montserrat', sans-serif;
+  padding-bottom: 20px;
+}
+  
+.post-title, .post-description, .post-date-author {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  line-height: 1.5;
+  padding: 0px;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.post-date-author {
+  font-size: 16px;
+  line-height: 1.1;
+}
+
+.post-title a {
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  color: #564E58;
+}
+
+.post-title a:hover {
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: underline;
+  color: #564E58;
+}
+
+.post-excerpt {
+  font-family: 'Montserrat', sans-serif;
+  text-align: justify;
+  margin: 16px 0;
+}

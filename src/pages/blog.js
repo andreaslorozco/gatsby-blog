@@ -5,7 +5,7 @@ import { Helmet } from "react-helmet"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-// import '../css/index.css'; // add some style if you want!
+import './blog.css'; // add some style if you want!
 
 export default function Index({ data }) {
   const { edges: posts } = data.allMarkdownRemark
@@ -17,12 +17,12 @@ export default function Index({ data }) {
           .filter(post => post.node.frontmatter.title.length > 0)
           .map(({ node: post }) => {
             return (
-              <div className="blog-post-preview" key={post.id}>
-                <h1>
+              <div className="post" key={post.id}>
+                <h2 className="post-title">
                   <Link to={post.frontmatter.path}>{post.frontmatter.title}</Link>
-                </h1>
-                <h2>{post.frontmatter.date}</h2>
-                <p>{post.excerpt}</p>
+                </h2>
+                <h3 className="post-date-author">Posted on {post.frontmatter.date} by Andreas</h3>
+                <p className="post-excerpt">{post.excerpt}</p>
               </div>
             )
           })}
