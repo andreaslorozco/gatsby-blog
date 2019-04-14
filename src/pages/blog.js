@@ -3,15 +3,14 @@ import { Link, graphql } from "gatsby"
 // eslint-disable-next-line
 import { Helmet } from "react-helmet"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
 
 import './blog.css'; // add some style if you want!
 
 export default function Index({ data }) {
-  const { edges: posts } = data.allMarkdownRemark
+  const { edges: posts } = data.allMarkdownRemark;
   return (
     <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+      <Helmet title="Blog – Andreas Leimbach"/>
       <div className="blog-posts">
         {posts
           .filter(post => post.node.frontmatter.title.length > 0)
@@ -21,8 +20,8 @@ export default function Index({ data }) {
                 <h2 className="post-title">
                   <Link to={post.frontmatter.path}>{post.frontmatter.title}</Link>
                 </h2>
-                <h3 className="post-date-author">Posted on {post.frontmatter.date} by Andreas</h3>
-                <p className="post-excerpt">{post.excerpt}</p>
+                <h3 className="post-date-author">Escrito en {post.frontmatter.date} por Andreas</h3>
+                <p className="post-excerpt">{post.frontmatter.excerpt}</p>
               </div>
             )
           })}
@@ -42,6 +41,7 @@ export const pageQuery = graphql`
             title
             date(formatString: "MMMM DD, YYYY")
             path
+            excerpt
           }
         }
       }
