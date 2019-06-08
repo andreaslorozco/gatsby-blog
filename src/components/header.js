@@ -17,8 +17,8 @@ const Header = ({ siteTitle }) => (
     <Link activeClassName="active" className="header-link" to="/">
       Principal
     </Link>
-    <PartiallyActiveLink activeClassName="active" className="header-link" to="/blog">
-      Blog
+    <PartiallyActiveLink activeClassName="active" className="header-link" to="/about">
+      Acerca De
     </PartiallyActiveLink>
     <Link activeClassName="active" className="header-link" to="/contact">
       Contacto
