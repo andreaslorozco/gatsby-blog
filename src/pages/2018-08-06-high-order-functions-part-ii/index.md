@@ -14,8 +14,6 @@ excerpt: "Ya que superamos la teoría en el post anterior, ahora pongamos en pr�
 
 ##  ¡Escribamos algo de código!
 
-excerpt: "Ya que superamos la teoría en el post anterior, ahora pongamos en práctica lo aprendido con un poco de código.
-
 ###  .filter()
 
 Cuando corremos la función de `filter()` en un arreglo, la función ** devolverá un arreglo nuevo ** con los elementos que logren pasar un "*test*" dado por otra función. Si tenemos un arreglo de números y queremos obtener todos los número mayores a 100, usaríamos `filter()` y pasaríamos una función que retorne `true` si el valor es mayor a 100.
