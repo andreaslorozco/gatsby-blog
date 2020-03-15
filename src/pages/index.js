@@ -22,7 +22,7 @@ export default function Index({ data }) {
                   </Link>
                 </h2>
                 <h3 className="post-date-author">
-                  Escrito en {post.frontmatter.date} por Andreas
+                  Escrito por Andreas el {post.frontmatter.date} 
                 </h3>
                 <p className="post-excerpt">{post.excerpt}</p>
               </div>
@@ -42,7 +42,10 @@ export const pageQuery = graphql`
           id
           frontmatter {
             title
-            date(formatString: "MMMM DD, YYYY")
+            date(
+              formatString: "DD MMMM, YYYY",
+              locale: "es-ES"
+              )
             path
           }
         }
