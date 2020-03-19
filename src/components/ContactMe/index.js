@@ -14,16 +14,22 @@ const ContactMe = () => (
       <div class="form-content">
         <form action="https://formspree.io/me@andreaslorozco.com" method="POST">
           <div>
-            <label for="name">Name</label>
-            <input class="u-full-width" type="text" id="name" name="name" placeholder="Your name..."/>
+            <label for="name">
+              Name
+              <input class="u-full-width" type="text" id="name" name="name" placeholder="Your name..."/>
+            </label>
           </div>
           <div>
-            <label for="email">E-mail</label>
-            <input class="u-full-width" type="email" id="email" name="email" placeholder="Your email..." required/>
+            <label for="email">
+              E-mail
+              <input class="u-full-width" type="email" id="email" name="email" placeholder="Your email..." required/>
+            </label>
           </div>
           <div>
-            <label for="message">Message</label>
-            <textarea class="u-full-width" id="message" name="message" placeholder="Write something..." style={{height: "200px"}}></textarea>
+            <label for="message">
+              Message
+              <textarea class="u-full-width" id="message" name="message" placeholder="Write something..." style={{height: "200px"}}></textarea>
+            </label>
           </div>
           <input type="submit" value="Submit"/>
         </form>
