@@ -73,7 +73,7 @@ Todo funcionaba bien cuando la longitud del arreglo era mayor a 0. Lo que casi s
 
 Primero, nuestra condición es definitivamente falsy, por lo que **no** se va a devolver nuestro segundo argumento (<OtroComponente />), sino que va a devolver el primer argumento.
 
-Segundo, React renderiza todo lo que sea `typeof string` o `typeof nombre`, e ignora el renderizado de todo `typeof boolean` o `typeof undefined`.
+Segundo, React renderiza todo lo que sea `typeof string` o `typeof int`, e ignora el renderizado de todo `typeof boolean` o `typeof undefined`.
 
 Por lo tanto, ya que la longitud del arreglo es un número y ese valor es el que se está devolviendo en la evaluación de nuestra condición, se renderiza el número 0 en nuestro HTML.
 
