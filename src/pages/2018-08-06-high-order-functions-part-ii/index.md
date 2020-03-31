@@ -6,6 +6,7 @@ date:   2018-08-06T19:08:29.962Z
 author: Andreas
 categories: javascript
 excerpt: "Ya que superamos la teoría en el post anterior, ahora pongamos en práctica lo aprendido con un poco de código."
+published: true
 ---
 
 # Funciones de orden superior - Parte II: .filter(), .map() y reduce()

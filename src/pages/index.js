@@ -13,6 +13,7 @@ export default function Index({ data }) {
       <div className="blog-posts">
         {posts
           .filter(post => post.node.frontmatter.title.length > 0)
+          .filter(post => post.node.frontmatter.published)
           .map(({ node: post }) => {
             return (
               <div className="post" key={post.id}>
@@ -47,6 +48,7 @@ export const pageQuery = graphql`
               locale: "es-ES"
               )
             path
+            published
           }
         }
       }
