@@ -11,7 +11,14 @@ published: false
 
 // https://codepen.io/andreaslorozco/pen/oNXQEvO
 
-# Corto-Circuito en rendereos condicionales de React
+# ¿Qué es la etiqueta WBR?
+
+Pues no, yo nunca antes la había escuchado. Pero imaginemos el siguiente escenario: Necesitamos presentar una lista de palabras o términos y el ancho de la columna que tenemos para presentarla es limitado. Dependiendo del ancho de la columna y la longitud de los términos, podríamos terminar con este problema ([Código en Codepen](https://codepen.io/andreaslorozco/pen/oNXQEvO)):
+
+![The-Problem](./the-problem.png)
+
+
+Como podemos ver, los términos de nuestra columna sobrepasan el ancho de la misma e invaden cualquier contenido que tengamos en 
 
 Hace poco me topé con un problema en el trabajo mientras estaba trabajando en el renderizado de una lista de elementos, utilizando React. Normalmente, si el renderizado de un elemento dependía de alguna condición, yo escribía el código de esta forma:
 
