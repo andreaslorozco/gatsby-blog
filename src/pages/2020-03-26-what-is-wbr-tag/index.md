@@ -18,7 +18,22 @@ Pues no, yo nunca antes la había escuchado. Pero imaginemos el siguiente escena
 ![The-Problem](./the-problem.png)
 
 
-Como podemos ver, los términos de nuestra columna sobrepasan el ancho de la misma e invaden cualquier contenido que tengamos en 
+En el código tenemos un simple layout de dos columnas, y dentro de la primera columna tenemos una lista no ordenada de términos. Como podemos ver, cuando los términos de nuestra columna estan separados por el caracter `/`, éstos sobrepasan el ancho de la misma e invaden cualquier contenido que tengamos en la siguiente columna. No tenemos este problema con los términos separados por el caracter `-`, pero necesitamos que el quiebre de linea de los primeros términos suceda de manera orgánica.
+
+Gracias a CSS, podríamos pensar en una potencial solución a este problema con la propiedad `word-break`. Esta propiedad tiene dos posibles valores que nos ayudan a hacer quiebres de línea: `break-all` y la propiedad `break-word`. Probemos primero con `break-all`, y asignemosle el valor a los elementos `<li>` ([Código en Codepen](https://codepen.io/andreaslorozco/pen/dyoEyoQ)):  
+
+```css{numberLines: true}
+
+li {
+  word-break: break-all;
+}
+``` 
+
+![ejemplo con break all](./break-all.png)
+
+Y... quedo peor. No solo perdimos el quiebre de linea en el caracter `-`, sino que tambien todos los términos quiebran su línea en el primer caracter que sobrepasaría su columna. ¿Qué tal con `break-word`?
+
+![ejemplo con break word](./break-word.png)
 
 Hace poco me topé con un problema en el trabajo mientras estaba trabajando en el renderizado de una lista de elementos, utilizando React. Normalmente, si el renderizado de un elemento dependía de alguna condición, yo escribía el código de esta forma:
 
