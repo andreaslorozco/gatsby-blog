@@ -605,7 +605,7 @@ pre code {
   background: none;
   line-height: 1.42;
 }
-code:before,
+
 tt:before,
 tt:after {
   letter-spacing: -0.2em;
