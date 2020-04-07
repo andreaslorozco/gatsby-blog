@@ -9,8 +9,6 @@ excerpt: "Si nunca habías visto la etiqueta <wbr> en HTML, acá aprenderás sob
 published: true
 ---
 
-// https://codepen.io/andreaslorozco/pen/oNXQEvO
-
 # ¿Qué es la etiqueta WBR?
 
 Pues no, yo nunca antes la había escuchado. Pero imaginemos el siguiente escenario: Necesitamos presentar una lista de palabras o términos y el ancho de la columna que tenemos para presentarla es limitado.
